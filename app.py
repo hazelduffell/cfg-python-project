@@ -4,4 +4,4 @@ app = Flask("my_first_app")
 @app.route("/")
 def say_hello():
     return "hello world!"
-    app.run(debug=True, host="0.0.0.0")
+app.run(debug=True, host="0.0.0.0")
