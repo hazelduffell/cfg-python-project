@@ -1,7 +1,8 @@
-from flask import Flask
+from flask import Flask, render_template
 app = Flask("my_first_app")
 
 @app.route("/")
 def say_hello():
-    return "hello world!"
-app.run(debug=True, host="0.0.0.0")
+    return render_template("index.html")
+
+app.run(debug=True)
